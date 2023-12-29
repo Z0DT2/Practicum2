@@ -1,0 +1,90 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="LK.css">
+    <title> Личный кабинет </title>
+    <style>
+        td
+        {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <table style="background-color: transparent">
+            <tr>
+                <td><a href="news and updates.html" class="head-item"><img src="logo\Retro123.png" width="140" height="80"></a></td>
+                <td width = 200 align="center"><p><a href="tarifs.html" class="head-item">Тарифы </a></p></td>
+                <td width = 200 align="center"><p><a href="news and updates.html" class="head-item">Новости и обновления </a></p></td>
+                <!-- <td width = 200 align="center"><p><a href="achievements.html" class="head-item"> Достижения </a></p></td> -->
+                <!-- <td width = 200 align="center"><p><a href="Чат поддержки.html" class="head-item"> Чат поддержки </a></p></td> -->
+                <td width = 10000></td>
+                <td width = 200 align="center"> <p><a href="registration.html" class="head-item"> регистрация </a><br></p></p><a href="login.html" class="head-item">вход </a></td>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <table align="center" width = 1500 height = 800 cellspacing = "20px" style="background-color: transparent(32, 26, 68);" border="0">
+        <tr valign = top><td width = 10 height = "10"><img class="pfp" src="no-image.jpg"></td></td><td valign = bottom height = "10" width = 100>Login: Example</td><td valign="top" width = 300 align="center" rowspan="4"><br><br>Активные услуги <br>
+            <table border="2" valign = top width = 500>
+                <tr><td>id</td><td>name</td><td>дата оплаты</td><td>дата истечения</td></tr>
+            </table></td>
+        <td valign="top" width = 300 align="center" rowspan="4"><br><br>История платежей <br>
+            <table border="2" valign = top width = 500>
+                <tr><td>id</td><td>name</td><td>дата оплаты</td><td>дата истечения</td></tr>
+            </table></td></tr>
+
+
+
+
+
+        <tr><td align="right" height = 10>Email:</td><td height = 10>Examle@gmail.com</td></tr>
+
+            <tr><td align="center" height = 10 colspan="2"><button class="password-reset" id="myBtn" onclick="openModal()">Сбросить пароль</button></td></tr>
+            <div id="myModal" class="modal">
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <form action="reset.php" method="post">
+                  <h2>Смена пароля</h2>
+                  <!-- Добавьте здесь необходимые поля для смены пароля -->
+                  <h3>старый пароль</h3>
+                  <input name="oldpassword" type="number" id="oldpassword" required ><br>
+                  <h3>новый пароль</h3>
+                  <input name="newpassword" type="number" id="newpassword" required><br>
+                  <h3>повторите новый пароль</h3>
+                  <input name="newpasswordrep" type="number" id="newpasswordrep" required><br>
+                  <button  type="submit" onclick="savePassword()">Сохранить</button>
+                </div>
+              
+              </div>
+              
+              <script>
+              // Функция для открытия модального окна
+              function openModal()
+               {
+                document.getElementById("myModal").style.display = "block";
+              }
+              
+              // Функция для закрытия модального окна
+              function closeModal() 
+              {
+                document.getElementById("myModal").style.display = "none";
+              }
+              
+              // Функция для сохранения нового пароля
+              function savePassword() 
+              {
+                alert("Пароль успешно изменен! сейчас ваc вернет на страничку входа");
+                closeModal();
+              }
+              </script>
+        </form> 
+        
+        <tr><td align="center" valign = "top" colspan="2"><button class="lk-oplata">оплатить услуги</button></td></tr>
+    </table>
+    <script src="app.js"></script>
+    </body>
+</html>
